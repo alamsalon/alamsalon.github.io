@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~roboto-fontface/css/roboto/roboto-fontface.css';
+@import 'variables.scss'; 
+
+html{
+    height: 1000px;
+    background-color: #070707;
+}
+body{
+    background-color: #070707;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.salon-btn-primary{
+    color: $primaryColor !important;
+    background: $secondaryColor;
+    border-radius: 33PX;
+}
+
+.salon-btn-primary:hover{
+box-shadow: 0px 0px 16px 6px rgb(255 255 255 / 20%), 0 0px 20px 2px rgb(255 255 255 / 19%);
+}
+
+.salon-text-color{
+    color: white !important;
+    opacity: 0.6;
+}
+
+.salon-header-color{
+    color: $secondaryColor;
+}

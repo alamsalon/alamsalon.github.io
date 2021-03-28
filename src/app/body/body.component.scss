@@ -1,0 +1,76 @@
+@import "../../variables.scss";
+
+// .img-transbox{
+//     background-image: url(../../assets/images/brand-logo.jpg);
+//     background-size: cover, cover;
+//     height: 100px;
+//     padding: 0%;
+//     position: relative;
+// }
+// .transbox{
+//     position: absolute;
+//     height: 100px;
+//     width: 100%;
+//     background-color: pink;
+// }
+
+.carousel-inner > .carousel-item{
+    height: 600px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: $secondaryColor;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 2px solid $secondaryColor;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: $secondaryColor;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: $secondaryColor;
+}
+.carousel-indicators [data-target]{
+    background-color: $secondaryColor;
+}
+
+.carousel-caption{
+   h5, p{
+        color: $secondaryColor;
+    }
+}
+
+.our-services{
+    font-size: 50px;
+    font-weight: bold;
+    color: $secondaryColor;
+    P{
+        border-bottom: 5px solid $secondaryColor;
+    }
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.card-deck .card {
+    border: 2px solid $secondaryColor;
+    background-color: $primaryColor;
+}
+.card-title{
+    color: $secondaryColor;
+}
+
