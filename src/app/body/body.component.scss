@@ -74,3 +74,9 @@
     color: $secondaryColor;
 }
 
+@media (max-width: 576px) {
+    .card-img-top {
+        height: auto ;
+    }
+
+ }
