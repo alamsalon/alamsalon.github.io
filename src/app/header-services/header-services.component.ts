@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { empty } from 'rxjs';
+import * as $ from 'jquery'
 
 @Component({
     selector: 'services',
@@ -16,10 +17,12 @@ export class HeaderServiceComponent implements OnInit {
     ngOnInit(): void {
 
     }
+    collapse() {
 
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+    }
     goToSection(e) {
-        console.log("event--->", e)
         this.showDiv = e.target.innerText;
-        console.log(this.showDiv);
     }
 }
