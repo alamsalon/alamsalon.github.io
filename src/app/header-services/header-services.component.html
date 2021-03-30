@@ -1,0 +1,103 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Services</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#hairSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">HAIR</a>
+                <ul class="collapse list-unstyled" id="hairSubmenu">
+                    <li>
+                        <a routerLink="/services" (click)="goToSection($event)">Hair Style</a>
+                    </li>
+                    <li>
+                        <a routerLink="/services" (click)="goToSection($event)">Hair Treatment</a>
+                    </li>
+                    <li>
+                        <a href="#">Hair System & Wig</a>
+                    </li>
+                    <li>
+                        <a href="#">Ladies Hair Extension</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#SkinSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SKIN</a>
+                <ul class="collapse list-unstyled" id="SkinSubmenu">
+                    <li>
+                        <a href="#">Skin Care</a>
+                    </li>
+                    <li>
+                        <a href="#">Body Care</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#makeupSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MAKEUP</a>
+                <ul class="collapse list-unstyled" id="makeupSubmenu">
+                    <li>
+                        <a href="#">MakeUp</a>
+                    </li>
+                    <li>
+                        <a href="#">Styling</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bridalSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BRIDAL</a>
+                <ul class="collapse list-unstyled" id="bridalSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+        <div *ngIf="showDiv === 'Hair Style'">
+            <div class="container-fluid div-table">
+                <h1>Hello World!</h1>
+                <div class="row">
+                    <div class="col-md-4 div-table-header">
+                        <p><strong> ipsum...</strong></p>
+                    </div>
+                    <div class="col-md-4 div-table-header">
+                        <p><strong> ut perspiciatis...</strong></p>
+                    </div>
+                    <div class="col-md-4 div-table-header">
+                        <p><strong>dnjdbfjdskb</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid div-table">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>ipsum...</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Sed ut perspiciatis...</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>ndcsdjcndsjndc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="showDiv === 'Hair Treatment'">
+            <h1>hello krishna</h1>
+        </div>
+    </div>
