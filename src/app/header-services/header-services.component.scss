@@ -9,13 +9,13 @@ body {
     background: #fafafa;
 }
 
-p {
+// p {
     
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
+//     font-size: 1.1em;
+//     font-weight: 300;
+//     line-height: 1.7em;
+//     color: #999;
+// }
 
 a,
 a:hover,
@@ -221,11 +221,18 @@ ul ul a:hover{
 margin: auto;
 padding:auto;
 text-align: center;
-border: $secondaryColor;
-font-weight: bold;
+border-bottom: 1px solid grey;
+padding-top: 10px;
 
 }
+.div-table-odd{
+    background: #f0f0f0;
+}
+.div-table-even{
+    background: #fff;
+}
+
 
 .div-table-header{
-    font-size: 20px;
+   // font-size: 20px;
 }

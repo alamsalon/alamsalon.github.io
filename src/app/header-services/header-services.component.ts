@@ -13,7 +13,7 @@ export class HeaderServiceComponent implements OnInit {
 
 
     }
-    showDiv = "";
+    showDiv = "Hair Style";
     ngOnInit(): void {
 
     }

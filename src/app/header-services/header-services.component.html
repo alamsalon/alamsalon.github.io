@@ -16,10 +16,10 @@
                         <a routerLink="/services" (click)="goToSection($event)">Hair Treatment</a>
                     </li>
                     <li>
-                        <a href="#">Hair System & Wig</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Hair System & Wig</a>
                     </li>
                     <li>
-                        <a href="#">Ladies Hair Extension</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Ladies Hair Extension</a>
                     </li>
                 </ul>
             </li>
@@ -27,24 +27,28 @@
                 <a href="#SkinSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SKIN</a>
                 <ul class="collapse list-unstyled" id="SkinSubmenu">
                     <li>
-                        <a href="#">Skin Care</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Skin Care</a>
                     </li>
                     <li>
-                        <a href="#">Body Care</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Body Polishing</a>
+                    </li>
+                    <li>
+                        <a routerLink="/services" (click)="goToSection($event)">Wax</a>
                     </li>
                 </ul>
             </li>
+            
             <li>
                 <a href="#makeupSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MAKEUP</a>
                 <ul class="collapse list-unstyled" id="makeupSubmenu">
                     <li>
-                        <a href="#">MakeUp</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Party MakeUp</a>
                     </li>
                     <li>
-                        <a href="#">Styling</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Styling</a>
                     </li>
                     <li>
-                        <a href="#">Page 3</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Page 3</a>
                     </li>
                 </ul>
             </li>
@@ -52,16 +56,50 @@
                 <a href="#bridalSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BRIDAL</a>
                 <ul class="collapse list-unstyled" id="bridalSubmenu">
                     <li>
-                        <a href="#">Page 1</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Page 1</a>
                     </li>
                     <li>
-                        <a href="#">Page 2</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Page 2</a>
                     </li>
                     <li>
-                        <a href="#">Page 3</a>
+                        <a routerLink="/services" (click)="goToSection($event)">Page 3</a>
                     </li>
                 </ul>
             </li>
+
+            <li>
+                <a href="#spaSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SPA</a>
+                <ul class="collapse list-unstyled" id="spaSubmenu">
+                    <li>
+                        <a routerLink="/services" (click)="goToSection($event)">Manicure Spa</a>
+                    </li>
+                    <li>
+                        <a routerLink="/services" (click)="goToSection($event)">Padicure Spa</a>
+                    </li>
+                    <li>
+                        <a routerLink="/services" (click)="goToSection($event)">Hair Spa</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#threadSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">THREADING</a>
+                <ul class="collapse list-unstyled" id="threadSubmenu">
+                    <li>
+                        <a routerLink="/services" (click)="goToSection($event)">Threading</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#bleachSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BLEACH / D-TAN</a>
+                <ul class="collapse list-unstyled" id="bleachSubmenu">
+                    <li>
+                        <a routerLink="/services" (click)="goToSection($event)">Bleach/D-Tan</a>
+                    </li>
+                </ul>
+            </li>
+
         </ul>
     </nav>
 
@@ -86,38 +124,675 @@
                 </div>
             </div>
         </nav>
+        <h1 class="text-center p-3">{{showDiv}}</h1>
         <div *ngIf="showDiv === 'Hair Style'">
-            <div class="container-fluid div-table">
-                <h1>Hello World!</h1>
+            <div class="container-fluid  div-table div-table-odd">
                 <div class="row">
-                    <div class="col-md-4 div-table-header">
-                        <p><strong> ipsum...</strong></p>
+                    <div class="col-md-4 ">
+                        <p>Advance Hair Cut</p>
                     </div>
-                    <div class="col-md-4 div-table-header">
-                        <p><strong> ut perspiciatis...</strong></p>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
                     </div>
-                    <div class="col-md-4 div-table-header">
-                        <p><strong>dnjdbfjdskb</strong></p>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;600*</strong></p>
                     </div>
                 </div>
             </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Basic Hair Cut</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;400*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Hair Wash</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;300* - &#8377;500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Blow Dry</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;300* - &#8377;700*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Out Curls Blow Dry</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;400* -  &#8377;800*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Comb Curl & Ironing</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;700* -  &#8377;2000*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Hair Do</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500* -  &#8377;1000*</strong></p>
+                    </div>
+                </div>
+            </div>
+            
 
-            <div class="container-fluid div-table">
-                <div class="row">
-                    <div class="col-md-4">
-                        <p>ipsum...</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p>Sed ut perspiciatis...</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p>ndcsdjcndsjndc</p>
-                    </div>
-                </div>
-            </div>
         </div>
         <div *ngIf="showDiv === 'Hair Treatment'">
-            <h1>hello krishna</h1>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Hair Spa</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> Highlight The Youthfulness Of Your Eyes As You Treat Them With This Rejuvenation Service
+                                Enriched With Papaya And Pineapple Enzymes.
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;1200* - &#8377;2500*</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Hair Loss</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> Highlight The Youthfulness Of Your Eyes As You Treat Them With This Rejuvenation Service
+                                Enriched With Papaya And Pineapple Enzymes.
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;1500* - &#8377;3000*</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Anti Dandruff</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;1200*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Oil Therapy</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500*- &#8377;800*</strong></p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-    </div>
+        <div *ngIf="showDiv === 'Wax'">
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Face</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;100* - &#8377;200*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>F- Legs</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500* - &#8377;1000*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>H- Legs</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;400* - &#8377;800*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>F- Hand</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;400* - &#8377;800*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>H- Hand</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;300* - &#8377;500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Back</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500* - &#8377;1000*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Front</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500* - &#8377;1000*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Full Body</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;2000* - &#8377;3500*</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="showDiv === 'Manicure Spa'">
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Basic</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;400*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Lotus (Crystal)</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;700*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Paraffin</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500*</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div *ngIf="showDiv === 'Padicure Spa'">
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Basic</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Lotus (Crystal)</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;1000*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Paraffin</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;800*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Heel Peel</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;1200*</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div *ngIf="showDiv === 'Body Polishing'">
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Crystal Body Spa</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;2500* - &#8377;3500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Body Spa</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;1500* - &#8377;2000*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Oil Therapy</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong>&#8377;1000* - &#8377;1500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Body Polishing</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;3500* - &#8377;7500*</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div *ngIf="showDiv === 'Threading'">
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Full Face</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;100*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Upper Lips</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;50*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>chin</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong>&#8377;50*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Eyebrows</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;50*</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div *ngIf="showDiv === 'Bleach/D-Tan'">
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Face</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;400* - &#8377;800*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>F- Legs</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;700*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>H- Legs</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>F- Hand</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>H- Hand</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;400*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Back</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Front</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Full Body</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;2500*</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div *ngIf="showDiv === 'Party MakeUp'">
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Air Brush</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;3000*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-even">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Mac</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong> &#8377;2500*</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  div-table div-table-odd">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p>Kryolan</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p> 
+                        </p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <p><strong>&#8377;2000*</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+     </div>
