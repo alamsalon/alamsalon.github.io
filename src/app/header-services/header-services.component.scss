@@ -222,7 +222,7 @@ margin: auto;
 padding:auto;
 text-align: center;
 border-bottom: 1px solid grey;
-padding-top: 10px;
+padding-top: 15px;
 
 }
 .div-table-odd{
@@ -235,4 +235,18 @@ padding-top: 10px;
 
 .div-table-header{
    // font-size: 20px;
+}
+
+@media (min-width: 576px) {
+.div-table{
+
+    .row > .col-md-4{
+        text-align-last: start;
+    }
+    .row > .col-md-4:nth-child(3n){
+
+        text-align-last: end;
+    }
+
+}
 }

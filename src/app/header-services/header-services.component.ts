@@ -24,5 +24,7 @@ export class HeaderServiceComponent implements OnInit {
     }
     goToSection(e) {
         this.showDiv = e.target.innerText;
+        $('#sidebar').removeClass('active');
+        $(this).removeClass('active');
     }
 }
