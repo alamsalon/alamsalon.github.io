@@ -5,7 +5,11 @@ import { FooterComponent } from './footer/footer.component'
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BodyComponent } from './body/body.component';
 import { HeaderServiceComponent } from './header-services/header-services.component';
-
+import { GalleryComponent } from './gallery/gallery.component';
+import{BookAppointmentComponent} from './book-appointment/book-appointment.component'
+import { OffersComponent } from './offers/offers.component';
+import { BranchesComponent } from './branches/branches.component';
+import { CareerComponent } from './career/career.component';
 
 const routes: Routes = [
   {
@@ -20,7 +24,27 @@ const routes: Routes = [
   {
     path: 'services',
     component: HeaderServiceComponent
-  }
+  },
+  {
+    path: 'gallery',
+    component: GalleryComponent
+  },
+  {
+    path: 'book-appointment',
+    component: BookAppointmentComponent
+  },
+  {
+    path: 'offers',
+    component: OffersComponent
+  },
+  {
+    path: 'branches',
+    component: BranchesComponent
+  },
+  {
+    path: 'career',
+    component: CareerComponent
+  },
 
 ];
 

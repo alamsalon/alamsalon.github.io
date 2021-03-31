@@ -8,6 +8,11 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderServiceComponent } from './header-services/header-services.component';
+import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
+import { OffersComponent } from './offers/offers.component';
+import { BranchesComponent } from './branches/branches.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { CareerComponent } from './career/career.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { HeaderServiceComponent } from './header-services/header-services.compon
     BodyComponent,
     FooterComponent,
     ContactUsComponent,
-    HeaderServiceComponent
+    HeaderServiceComponent,
+    BookAppointmentComponent,
+    OffersComponent,
+    BranchesComponent,
+    GalleryComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule,
