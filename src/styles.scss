@@ -10,6 +10,9 @@ body{
     background-color: #070707;
     font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+.row{
+margin: auto;
+}
 .salon-btn-primary{
     color: $primaryColor !important;
     background: $secondaryColor;
