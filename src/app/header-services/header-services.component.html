@@ -5,35 +5,35 @@
             <h3>Services</h3>
         </div>
 
-        <ul class="list-unstyled components">
+        <ul class="list-unstyled components services-menu">
             <li class="active">
                 <a href="#hairSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">HAIR</a>
                 <ul class="collapse list-unstyled" id="hairSubmenu">
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Hair Style</a>
+                        <a  (click)="goToSection($event)">Hair Style</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Hair Treatment</a>
+                        <a  (click)="goToSection($event)">Hair Treatment</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Hair System, Wig & Hair Extension</a>
+                        <a  (click)="goToSection($event)">Hair System, Wig & Hair Extension</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Mens Salon</a>
+                        <a  (click)="goToSection($event)">Mens Salon</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="#SkinSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SKIN</a>
-                <ul class="collapse list-unstyled" id="SkinSubmenu">
+                <a href="#skinSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SKIN</a>
+                <ul class="collapse list-unstyled" id="skinSubmenu">
                     <!-- <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Skin Care</a>
+                        <a  (click)="goToSection($event)">Skin Care</a>
                     </li> -->
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Body Polishing</a>
+                        <a  (click)="goToSection($event)">Body Polishing</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Wax</a>
+                        <a  (click)="goToSection($event)">Wax</a>
                     </li>
                 </ul>
             </li>
@@ -42,13 +42,13 @@
                 <a href="#makeupSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MAKEUP</a>
                 <ul class="collapse list-unstyled" id="makeupSubmenu">
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Party MakeUp</a>
+                        <a  (click)="goToSection($event)">Party MakeUp</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Reception Makeup</a>
+                        <a  (click)="goToSection($event)">Reception Makeup</a>
                     </li>
                     <!-- <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Page 3</a>
+                        <a  (click)="goToSection($event)">Page 3</a>
                     </li> -->
                 </ul>
             </li>
@@ -56,16 +56,16 @@
                 <a href="#bridalSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BRIDAL</a>
                 <ul class="collapse list-unstyled" id="bridalSubmenu">
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Bridal MakeUp</a>
+                        <a  (click)="goToSection($event)">Bridal MakeUp</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Bridal Package 1</a>
+                        <a (click)="goToSection($event)">Bridal Package 1</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Bridal Package 2</a>
+                        <a (click)="goToSection($event)">Bridal Package 2</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Groom Package</a>
+                        <a (click)="goToSection($event)">Groom Package</a>
                     </li>
                 </ul>
             </li>
@@ -74,13 +74,13 @@
                 <a href="#spaSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SPA</a>
                 <ul class="collapse list-unstyled" id="spaSubmenu">
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Manicure Spa</a>
+                        <a  (click)="goToSection($event)">Manicure Spa</a>
                     </li>
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Padicure Spa</a>
+                        <a  (click)="goToSection($event)">Padicure Spa</a>
                     </li>
                     <!-- <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Hair Spa</a>
+                        <a  (click)="goToSection($event)">Hair Spa</a>
                     </li> -->
                 </ul>
             </li>
@@ -90,7 +90,7 @@
                     class="dropdown-toggle">THREADING</a>
                 <ul class="collapse list-unstyled" id="threadSubmenu">
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Threading</a>
+                        <a  (click)="goToSection($event)">Threading</a>
                     </li>
                 </ul>
             </li>
@@ -100,7 +100,7 @@
                     D-TAN</a>
                 <ul class="collapse list-unstyled" id="bleachSubmenu">
                     <li>
-                        <a routerLink="/services" (click)="goToSection($event)">Bleach/D-Tan</a>
+                        <a  (click)="goToSection($event)">Bleach/D-Tan</a>
                     </li>
                 </ul>
             </li>
@@ -109,9 +109,9 @@
     </nav>
 
     <!-- Page Content  -->
-    <div id="content">
+    <div [ngClass]="this.device === 'desktop'? '' : 'content-mobile'" id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
-            <div class="container-fluid justify-content-end">
+            <div class="container-fluid ">
 
                 <button type="button" id="sidebarCollapse" class="navbar-btn" (click)="collapse()">
                     <span class="col-xs"></span>
@@ -129,7 +129,7 @@
                 </div>
             </div>
         </nav>
-        <h1 class="text-center p-3">{{showDiv}}</h1>
+        <h1  [ngClass]="this.device === 'desktop'? 'p-3' : 'h1-mobile'" class="text-center">{{showDiv}}</h1>
         <div *ngIf="showDiv === 'Hair Style'">
             <div class="container-fluid  div-table div-table-odd">
                 <div class="row">
