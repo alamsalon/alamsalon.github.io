@@ -19,7 +19,7 @@ export class BodyComponent implements OnInit {
   readMoreButtonClicked(event){
     let innerText = event.target.offsetParent.getElementsByClassName("card-title")[0].innerText;
     let cardTitle = this.getCardTitle(innerText);
-    this.router.navigate(['/services'], { queryParams: { cardTitle: cardTitle } });
+    this.router.navigate(['/services'], { queryParams: { title: cardTitle } });
   }
 
   getCardTitle(title){

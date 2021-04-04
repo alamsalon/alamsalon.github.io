@@ -10,7 +10,7 @@ import Utils from '../utility/utils';
 })
 export class HeaderServiceComponent implements OnInit {
 
-    cardTitle: string;
+    title: string;
     device:string;
     constructor(private route: ActivatedRoute) {}
 
@@ -18,9 +18,9 @@ export class HeaderServiceComponent implements OnInit {
     ngOnInit(): void {
         this.device = Utils.getDevice()
         this.route.queryParams.subscribe(params => {
-            this.cardTitle = params['cardTitle'];
-            if(!this.cardTitle) this.cardTitle = "BRIDAL";
-                this.goToSection(this.cardTitle, true);
+            this.title = params['title'];
+            if(!this.title) this.title = "BRIDAL";
+                this.goToSection(this.title, true);
         });
 
     }
