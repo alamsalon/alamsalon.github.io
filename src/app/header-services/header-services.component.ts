@@ -39,7 +39,7 @@ export class HeaderServiceComponent implements OnInit {
        
         
         if (this.device === "desktop") {
-            let pos = $("#brand-logo").offset().top;
+            let pos = $(".brand-logo").offset().top;
             $('body, html').animate({ scrollTop: pos });
             $('#sidebar').removeClass('active');
             $(this).removeClass('active')
