@@ -24,7 +24,7 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
       transition(
         'shown => hidden',
         animate(
-          '300ms ease-in',
+          '600ms ease-in',
           keyframes([
             style({ opacity: 0, transform: 'translateY(-50%)', offset: 0 }),
             style({ opacity: 1, transform: 'translateY(35px)', offset: 0.5 }),
