@@ -1,6 +1,212 @@
 @import "../../variables.scss";
-.coming-soon{
+// .coming-soon {
+//   color: $secondaryColor;
+//   margin: 100px 0px 100px 0px;
+// }
+
+// .show {
+//   display: block;
+// }
+
+// .column {
+//   float: left;
+//   width: 25%;
+//   padding: 5px;
+// }
+
+/* Style the buttons */
+
+.card {
+  //border: 2px solid $secondaryColor;
+  background-color: $primaryColor;
+}
+.image-gallery {
+  position: relative;
+}
+.image-gallery {
+  .card-image {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    padding: 0;
+
+    img {
+      border: 2px solid $secondaryColor;
+      //height: 100%; TODO : Need to revisit for same height of image
+    }
+  }
+}
+
+.image-gallery-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(14, 14, 17, 0.8);
+  opacity: 0;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.image-gallery-details {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.image-gallery-details h4 {
+  text-transform: uppercase;
+  color: $secondaryColor;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.image-gallery-details span {
+  display: inline;
+  // border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  height: 6px;
+  width: 30px;
+}
+
+.image-gallery-details p {
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.card :hover .image-gallery-details h4 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.card :hover .image-gallery-details p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.card:hover .image-gallery-overlay {
+  opacity: 1;
+}
+#myBtnContainer button {
+  padding-right: 30px;
+  padding-left: 30px;
+  border: none;
+  margin-left: 1%;
+  margin-bottom: 10px;
+  //text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .column {
+    width: 100%;
+  }
+
+  .image-gallery {
+    .card-image {
+      margin-left: 0;
+      margin-bottom: 0;
+      padding: 10px;
+    }
+  }
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: white;
+  //color: white;
+}
+.modal-body {
+  img {
+    width: 100%;
+  }
+}
+
+// Carousel css
+
+.carousel-inner > .carousel-item {
+  height: 600px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  cursor: pointer;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px;
+  width: 30px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-image: none;
+  cursor: pointer;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 17px;
+  color: black;
+  cursor: pointer;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 17px;
+  color: black;
+  cursor: pointer;
+}
+.carousel-indicators [data-target] {
+  background-color: $secondaryColor;
+}
+
+.carousel-caption {
+  h5,
+  p {
     color: $secondaryColor;
-    margin: 100px 0px 100px 0px;
-    
+  }
+}
+// .modal-dialog {
+//   flex-direction: column;
+//   justify-content: center;
+//   display: flex;
+//   height: 100vh;
+// }
+.modal-body,
+.modal-header {
+  background-color: black;
+  border-bottom: 0 !important;
+}
+.modal-header {
+  padding: 0px 16px 16px 16px;
+  span {
+    color: white;
+    border: 0 !important;
+  }
+}
+
+// .close:not(.disabled):focus {
+//   opacity: 1 !important;
+//   color: black;
+
+//   // background-color: black;
+// }
+.close {
+  padding-bottom: 0;
+}
+.close:focus {
+  outline: none;
 }
