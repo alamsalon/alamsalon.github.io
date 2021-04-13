@@ -21,7 +21,11 @@
     *ngFor="let obj of imgObj"
     class="column card col-md-2 card-image card-img-top justify-content-center align-content-center"
   >
-    <img [@visibilityChanged]="visiblityState" src="{{ obj.path }}" />
+    <img
+      class="image-gallery-media"
+      [@visibilityChanged]="visiblityState"
+      src="{{ obj.path }}"
+    />
     <div class="image-gallery-overlay" (click)="open(mymodal, obj.path)">
       <div class="image-gallery-details text-center">
         <h4>{{ obj.name }}</h4>

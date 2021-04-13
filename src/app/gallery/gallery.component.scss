@@ -208,9 +208,9 @@
     aspect-ratio: 16/9;
   }
 
-  .row {
-    align-items: flex-start !important;
-  }
+  // .row {
+  //   // align-items: flex-start !important;
+  // }
 
   .image-gallery {
     .card-image {
@@ -230,7 +230,7 @@
       margin-bottom: 10px;
     }
   }
-  img {
+  .image-gallery-media {
     max-width: 100px;
     max-height: 100px;
     height: auto;
