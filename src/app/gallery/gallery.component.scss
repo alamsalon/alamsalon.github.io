@@ -204,7 +204,7 @@
 @media (max-width: 576px) {
   .column {
     width: 40%;
-    height: auto;
+    max-height: 100%;
   }
 
   .image-gallery {
