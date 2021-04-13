@@ -203,7 +203,7 @@
 }
 @media (max-width: 576px) {
   .column {
-    width: 40%;
+    width: 100px;
     height: auto;
     aspect-ratio: 16/9;
   }
@@ -226,8 +226,8 @@
       margin-bottom: 10px;
     }
   }
-  img {
-    height: 100px;
-    width: 100px;
-  }
+  // img {
+  //   height: 100px;
+  //   width: 100px;
+  // }
 }
