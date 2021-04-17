@@ -13,7 +13,7 @@ import { CareerComponent } from './career/career.component';
 
 const routes: Routes = [
   {
-    path: '/',
+    path: '',
     component: BodyComponent,
   },
   {
