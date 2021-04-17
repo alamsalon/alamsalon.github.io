@@ -17,7 +17,7 @@ const routes: Routes = [
     component: BodyComponent,
   },
   {
-    path: '/contact-us',
+    path: 'contact-us',
     component: ContactUsComponent,
   },
   {
@@ -41,7 +41,7 @@ const routes: Routes = [
     component: BranchesComponent,
   },
   {
-    path: '/career',
+    path: 'career',
     component: CareerComponent,
   },
 ];
