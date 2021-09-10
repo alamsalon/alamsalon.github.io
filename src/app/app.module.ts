@@ -13,6 +13,8 @@ import { OffersComponent } from './offers/offers.component';
 import { BranchesComponent } from './branches/branches.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CareerComponent } from './career/career.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { CareerComponent } from './career/career.component';
     OffersComponent,
     BranchesComponent,
     GalleryComponent,
-    CareerComponent
+    CareerComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

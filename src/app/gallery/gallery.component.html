@@ -1,1 +1,85 @@
-<h1 class="coming-soon" style="text-align: center;">Coming Soon!!</h1>
+<div class="row mt-3"></div>
+<div class="row mt-3"></div>
+
+<div id="myBtnContainer" class="text-center myBtnContainer">
+  <button
+    *ngFor="let btn of btnObj; let i = index"
+    [class.active]="selectedIndex === i"
+    class="btn salon-btn-primary"
+    (click)="filterImgObj($event, i)"
+  >
+    {{ btn }}
+  </button>
+</div>
+
+<!-- <div class="row mt-3"></div>
+<div class="row mt-3"></div> -->
+<!-- //]]<div class="card mb-4"> -->
+
+<div class="row image-gallery justify-content-center">
+  <div
+    *ngFor="let obj of imgObj"
+    class="column card col-md-2 card-image card-img-top justify-content-center align-content-center"
+  >
+    <img
+      class="image-gallery-media"
+      [@visibilityChanged]="visiblityState"
+      src="{{ obj.path }}"
+    />
+    <div class="image-gallery-overlay" (click)="open(mymodal, obj.path)">
+      <div class="image-gallery-details text-center">
+        <h4>{{ obj.name }}</h4>
+        <span>.....</span>
+        <p>
+          {{ obj.details }}
+        </p>
+      </div>
+    </div>
+    <!-- <div class="col-md-offset-1"></div> -->
+  </div>
+</div>
+
+<div class="row mt-3"></div>
+
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <!-- <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4> -->
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    >
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <!-- <a title="Previous" class="fancybox-nav fancybox-prev" href=""
+      ><span></span
+    ></a> -->
+    <img src="{{ imagePath }}" />
+    <a
+      class="carousel-control-prev"
+      data-slide="prev"
+      (click)="setImagePath(imagePath, false, true)"
+    >
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a
+      class="carousel-control-next"
+      data-slide="next"
+      (click)="setImagePath(imagePath, true, false)"
+    >
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <!-- <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="modal.close('Save click')"
+    >
+      Ok
+    </button>
+  </div> -->
+</ng-template>
