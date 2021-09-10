@@ -47,3 +47,4 @@ npm install bootstrap
 
 npm install jquery
 
+ng build --prod=true --outputPath=docs --baseHref=/
