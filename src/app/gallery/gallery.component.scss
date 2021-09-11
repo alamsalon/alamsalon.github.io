@@ -139,10 +139,10 @@
 .carousel-control-next-icon {
   height: 30px;
   width: 30px;
-  outline: black;
+  outline:  $secondaryColor;
   background-size: 100%, 100%;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 4px solid  $secondaryColor;
   background-image: none;
   cursor: pointer;
 }
@@ -150,14 +150,14 @@
 .carousel-control-next-icon:after {
   content: ">";
   font-size: 17px;
-  color: black;
+  color:  $secondaryColor;
   cursor: pointer;
 }
 
 .carousel-control-prev-icon:after {
   content: "<";
   font-size: 17px;
-  color: black;
+  color:  $secondaryColor;;
   cursor: pointer;
 }
 .carousel-indicators [data-target] {
