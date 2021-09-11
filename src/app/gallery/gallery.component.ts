@@ -43,8 +43,8 @@ export class GalleryComponent implements OnInit {
     'Groom',
     'Coloring',
     'Styling',
-    'Hair Patch',
     'MakeUp',
+    'Manicure',
   ];
   imgObjData = [
     {
@@ -54,28 +54,28 @@ export class GalleryComponent implements OnInit {
     },
     {
       path: '../../assets/images/carousel/c3.jpg',
-      name: 'Bridal',
-      details: 'Bridal MakeUp',
-    },
-    {
-      path: '../../assets/images/carousel/c4.jpg',
-      name: 'Hair Patch',
-      details: 'Hair Wig',
-    },
-    {
-      path: '../../assets/images/carousel/c5.jpg',
       name: 'Coloring',
       details: 'Hair Coloring',
+    },
+    // {
+    //   path: '../../assets/images/carousel/c4.jpg',
+    //   name: 'Hair Patch',
+    //   details: 'Hair Wig',
+    // },
+    {
+      path: '../../assets/images/carousel/c5.jpg',
+      name: 'Styling',
+      details: 'Hair Styling',
     },
     {
       path: '../../assets/images/carousel/c6.jpg',
       name: 'Styling',
-      details: 'Hair Styling',
+      details: 'Beard Styling',
     },
     {
       path: '../../assets/images/carousel/c2.jpg',
-      name: 'Styling',
-      details: 'Hair Styling',
+      name: 'Bridal',
+      details: 'Bridal MakeUp',
     },
     {
       path: '../../assets/images/groom_package.jpg',
@@ -88,14 +88,34 @@ export class GalleryComponent implements OnInit {
       details: 'Groom MakeUp',
     },
     {
+      path: '../../assets/images/bridal2.jpg',
+      name: 'Bridal',
+      details: 'Bridal MakeUp',
+    },
+    {
       path: '../../assets/images/hair.jpg',
-      name: 'Coloring',
-      details: 'Hair Coloring',
+      name: 'Styling',
+      details: 'Hair Styling',
     },
     {
       path: '../../assets/images/carousel/c1.jpg',
       name: 'MakeUp',
       details: 'MakeUp & Styling',
+    },
+    {
+      path: '../../assets/images/manicure.jpg',
+      name: 'Manicure',
+      details: 'Nail Art',
+    },
+    {
+      path: '../../assets/images/padicure.jpg',
+      name: 'Manicure',
+      details: 'Mani-Pedi',
+    },
+    {
+      path: '../../assets/images/beard.jpg',
+      name: 'Styling',
+      details: 'Beard Styling',
     },
   ];
   imgObj;
