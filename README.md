@@ -39,7 +39,7 @@ Step2:
 Step3:
 `git checkout -b feature/development`
 
-Step4:
+Step4::
 `git branch --set-upstream-to=origin/feature/development`
 
 Bootstrap 4 installation:
@@ -48,3 +48,4 @@ npm install bootstrap
 npm install jquery
 
 ng build --prod=true --outputPath=docs --baseHref=/
+
