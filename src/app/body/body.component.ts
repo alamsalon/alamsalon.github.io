@@ -17,9 +17,10 @@ export class BodyComponent implements OnInit {
   }
 
   readMoreButtonClicked(event){
-    let innerText = event.target.offsetParent.getElementsByClassName("card-title")[0].innerText;
-    let cardTitle = this.getCardTitle(innerText);
-    this.router.navigate(['/services'], { queryParams: { title: cardTitle } });
+    // let innerText = event.target.offsetParent.getElementsByClassName("card-title")[0].innerText;
+    // let cardTitle = this.getCardTitle(innerText);
+    // this.router.navigate(['/services'], { queryParams: { title: cardTitle } });
+    window.open("https://instance.shivsofts.com/alam_salon/qr/index.php?branch_id=UzN4eE9JUEUzaUltOERvTTJKVVNGUT09");
   }
 
   getCardTitle(title){
